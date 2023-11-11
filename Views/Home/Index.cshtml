@@ -1,0 +1,163 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h1>Iniciativa Saúde da Cidade</h1>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+
+    <div class="col-6 mb-3 style="width:100%"">
+        <img src="https://i.pinimg.com/originals/3c/58/78/3c5878751af1be01ebd4b173ba9ab389.jpg" style="width: 100%;">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 border border-dark" style="padding: 10px;">
+        <h2>Entre em contato:</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form id="formCadastro" method="POST">
+            <div class="row">
+                <div class="col-2">
+                    <label asp-for="Nome">Nome:</label>
+                </div>
+                <div class="col-10">
+                    <input asp-for="Nome" id="idNome" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <label asp-for="Email">Email:</label>
+                </div>
+                <div class="col-10">
+                    <input asp-for="Email" id="idEmail" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <label asp-for="Mensagem">Mensagem:</label>
+                </div>
+                <div class="col-10">
+                    <textarea asp-for="Mensagem" id="idMensagem"></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" id="idBotao"/>
+            </div>
+        </form>
+    </div>
+
+    <figure class="col-2">
+        <img src="https://i.pinimg.com/originals/3c/58/78/3c5878751af1be01ebd4b173ba9ab389.jpg" style="width:100%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#example1">Agenda de eventos</a></figcaption>
+    </figure>
+
+    <figure class="col-2">
+        <img src="https://i.pinimg.com/originals/3c/58/78/3c5878751af1be01ebd4b173ba9ab389.jpg" style="width:100%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#example2">Dicas de vida saudável</a></figcaption>
+    </figure>
+
+    <figure class="col-2">
+        <img src="https://i.pinimg.com/originals/3c/58/78/3c5878751af1be01ebd4b173ba9ab389.jpg" style="width:100%">
+        <figcaption><a href="#" data-toggle="modal" data-target="#example3">Apoiadores</a></figcaption>
+    </figure>
+
+    <!-- Modal AGENDA -->
+    <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agenda</h5>
+                </div>
+                <div class="modal-body">
+                    <p>10/10/10 10:10 - Evento 1</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam explicabo adipisci sint. Atque optio ratione voluptate corrupti amet, eaque sapiente? Excepturi, obcaecati nihil nulla dicta vitae laboriosam aperiam. Saepe, autem.</p>
+                    
+                    <p>10/10/10 10:10 - Evento 1</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam explicabo adipisci sint. Atque optio ratione voluptate corrupti amet, eaque sapiente? Excepturi, obcaecati nihil nulla dicta vitae laboriosam aperiam. Saepe, autem.</p>
+                    
+                    <p>10/10/10 10:10 - Evento 1</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam explicabo adipisci sint. Atque optio ratione voluptate corrupti amet, eaque sapiente? Excepturi, obcaecati nihil nulla dicta vitae laboriosam aperiam. Saepe, autem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal DICAS -->
+    <div class="modal fade" id="example2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Dicas de vida saudável</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam explicabo adipisci sint. Atque optio ratione voluptate corrupti amet, eaque sapiente? Excepturi, obcaecati nihil nulla dicta vitae laboriosam aperiam. Saepe, autem.</p>
+                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam explicabo adipisci sint. Atque optio ratione voluptate corrupti amet, eaque sapiente? Excepturi, obcaecati nihil nulla dicta vitae laboriosam aperiam. Saepe, autem.</p>
+                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam explicabo adipisci sint. Atque optio ratione voluptate corrupti amet, eaque sapiente? Excepturi, obcaecati nihil nulla dicta vitae laboriosam aperiam. Saepe, autem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal APOIADORES -->
+    <div class="modal fade" id="example3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Apoiadores</h5>
+                </div>
+                <div class="modal-body">
+                    <div style="display: flex;">
+                        <div style="flex: 1;">
+                            <img src="https://img.freepik.com/fotos-gratis/a-estacao-do-outono-folheia-a-cena-da-planta-generativa-ai_188544-7971.jpg" style="width: 50%;">
+                        </div>
+                        <div style="flex: 1;">
+                            <h3>Empresa 1</h3>
+                            <p>Descrição</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex;">
+                        <div style="flex: 1;">
+                            <img src="https://img.freepik.com/fotos-gratis/a-estacao-do-outono-folheia-a-cena-da-planta-generativa-ai_188544-7971.jpg" style="width: 50%;">
+                        </div>
+                        <div style="flex: 1;">
+                            <h3>Empresa 2</h3>
+                            <p>Descrição</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex;">
+                        <div style="flex: 1;">
+                            <img src="https://img.freepik.com/fotos-gratis/a-estacao-do-outono-folheia-a-cena-da-planta-generativa-ai_188544-7971.jpg" style="width: 50%;">
+                        </div>
+                        <div style="flex: 1;">
+                            <h3>Empresa 3</h3>
+                            <p>Descrição</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex;">
+                        <div style="flex: 1;">
+                            <img src="https://img.freepik.com/fotos-gratis/a-estacao-do-outono-folheia-a-cena-da-planta-generativa-ai_188544-7971.jpg" style="width: 50%;">
+                        </div>
+                        <div style="flex: 1;">
+                            <h3>Empresa 4</h3>
+                            <p>Descrição</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>            
+</div>
